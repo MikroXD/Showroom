@@ -10,7 +10,8 @@ router.get('/', function(req, res) {
         <link rel="stylesheet" href="/stylesheets/style.css">
       </head>
       <body>
-        <h1>🚗 Selamat Datang di Dealer Mobil</h1>
+        <h1>ARS</h1>
+        <h2>CAR</h2>
         <p>Kami menjual berbagai mobil baru & bekas dengan harga terbaik.</p>
         <a href="/mobil/daftar">Lihat Daftar Mobil</a>
       </body>

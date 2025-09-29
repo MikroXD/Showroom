@@ -6,9 +6,12 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #df0c0cfe;
+  font-size: ;
 }
-
+h2{
+  color:black
+}
 p {
   color: #555;
 }
