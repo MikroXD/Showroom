@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 // Route 1: Halaman Beranda (HTML)
 router.get('/', function(req, res) {
   res.send(`
@@ -10,14 +11,30 @@ router.get('/', function(req, res) {
         <link rel="stylesheet" href="/stylesheets/style.css">
       </head>
       <body>
-        <h1>ARS</h1>
-        <h2>CAR</h2>
-        <p>Kami menjual berbagai mobil baru & bekas dengan harga terbaik.</p>
-        <a href="/mobil/daftar">Lihat Daftar Mobil</a>
+        <!-- Header -->
+        <header class="header">
+          <div class="logo">
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/car--v1.png" alt="Logo Mobil">
+            <div class="title">
+              <h1>ARS</h1>
+              <h2>CAR</h2>
+            </div>
+          </div>
+          <nav class="navbar">
+            <a href="/mobil/daftar">Daftar Mobil</a>
+          </nav>
+        </header>
+
+        <!-- Content -->
+        <main class="content">
+          <p>Kami menjual berbagai mobil baru & bekas dengan harga terbaik.</p>
+          <a href="/mobil/daftar" class="btn">Lihat Daftar Mobil</a>
+        </main>
       </body>
     </html>
   `);
 });
+
 
 
 // Route 2: Daftar Mobil (HTML)
